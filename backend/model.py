@@ -4,7 +4,7 @@ def predict_risk(data):
 
     sleep = data["sleep_hours"]
     activity = data["activity_level"]
-    sentiment = data["sentimenet"]
+    sentiment = data["sentiment"]
 
     risk = 0
 
@@ -17,4 +17,4 @@ def predict_risk(data):
     if sentiment < 0:
         risk += 40
 
-    return min(risk,100)        
+    return min(risk,100)
